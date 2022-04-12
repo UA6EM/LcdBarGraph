@@ -25,7 +25,7 @@
 #include <LiquidCrystal.h> 
 #include <LcdBarGraph.h> 
 LiquidCrystal lcd(6, 7, 10, 11, 12, 13);
-LcdBarGraph lbg(&lcd, 16, 0, 1);        // https://github.com/prampec/LcdBarGraph
+LcdBarGraph lbg(&lcd, 16, 0, 1);        // https://github.com/UA6EM/LcdBarGraph
 #else
 #include <LiquidCrystal_I2C.h>          // https://github.com/troublegum/liquidcrystal_i2c
 #include <LcdBarGraph_I2C.h>  
