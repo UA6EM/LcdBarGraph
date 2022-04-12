@@ -13,6 +13,7 @@ LcdBarGraph	KEYWORD1
 #######################################
 
 drawValue	KEYWORD2
+LcdBarGraph_I2C KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
