@@ -29,7 +29,7 @@
 #include "Arduino.h"
 #include "LcdBarGraph.h"
 
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
 
 
 // -- initializing bar segment characters
@@ -93,7 +93,7 @@ byte LcdBarGraph::_level4[8] = {
 };
 
 // -- constructor
-LcdBarGraph::LcdBarGraph(LiquidCrystal* lcd, byte numCols, byte startX, byte startY)
+LcdBarGraph::LcdBarGraph(LiquidCrystal_I2C* lcd, byte numCols, byte startX, byte startY)
 {
     // -- setting fields
     _lcd = lcd;
