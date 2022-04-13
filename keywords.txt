@@ -7,14 +7,12 @@
 #######################################
 
 LcdBarGraph	KEYWORD1
-LcdBarGraph_I2C	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
 drawValue	KEYWORD2
-LcdBarGraph_I2C KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
