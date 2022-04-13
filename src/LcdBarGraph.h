@@ -29,7 +29,7 @@
 #ifndef LCDBARGRAPH_H
 #define LCDBARGRAPH_H
 
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
 
 #include "Arduino.h"
 
@@ -47,13 +47,13 @@ public:
 	 * startX - Horzontal starting position (column) of the bar. Zero based value.
 	 * startY - Vertical starting position (row) of the bar. Zero based value.
      */
-    LcdBarGraph(LiquidCrystal* lcd, byte numCols, byte startX = 0, byte startY = 0);
+    LcdBarGraph(LiquidCrystal_I2C* lcd, byte numCols, byte startX = 0, byte startY = 0);
     /**
      * Draw a bargraph with a value between 0 and maxValue.
      */
     void drawValue(int value, int maxvalue);
 private:
-    LiquidCrystal* _lcd;
+    LiquidCrystal_I2C* _lcd;
     byte _numCols;
     byte _startX;
     byte _startY;
